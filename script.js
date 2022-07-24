@@ -4,7 +4,16 @@ request.send();
 request.onload=function(){
     var result=JSON.parse(request.response);
     console.log(result);
- for (i=0;i<result.length;i++){
-    console.log(result[i].flag)
- }
+    for (i=0;i<result.length;i++){
+        console.log(result[i].name);
+    }
+    for (i=0;i<result.length;i++){
+        console.log(result[i].region);
+    }
+    for (i=0;i<result.length;i++){
+        console.log(result[i].subregion);
+    }
+    for (i=0;i<result.length;i++){
+        console.log(result[i].population);
+    }
 }
